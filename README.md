@@ -25,7 +25,7 @@ After submission, the items will be remove from the current cart and the site ad
 * Placing an Order: Once there is at least one item in a user’s shopping cart, users can place an order.
 * Viewing Orders: Site administrators have access to a page where they can view any orders that have already been placed.
 
-***How to run this application***
+## How to run this application
 
 ### Prerequisites
 
