@@ -12,6 +12,8 @@ See a new order on the admin interface that he/she can mark as completed.
 Add or update category and name of product if needed.
 
 **Achievements**
+
+
 Menu: The web application support all of the available menu items for CASA GUSTULUI. Based on analyzing the menu and the various types of possible ordered items (small vs. large, toppings, additions, etc.), I created 4 models:
 Category : Types of cuisine eache section has a list of items
 Price_List : To determine a base price
