@@ -1,0 +1,71 @@
+{% comment %} {% load static %} {% endcomment %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Signup</title>
+</head>
+<body>
+ <div class="wrapper">
+	
+    <nav class="nav">
+        <div class="nav-logo">
+            <p>Casa Gustului</p>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href={%url 'login'%} class="link active">Home</a></li>
+                <li><a href={%url 'blog'%} class="link">Blog</a></li>
+                <li><a href={%url 'services'%}  class="link">Services</a></li>
+                <li><a href={%url 'about'%}  class="link">About</a></li>
+            </ul>
+        </div>
+        {% comment %} <div class="nav-button">
+            <button class="btn white-btn" id="loginBtn" onclick="login()"><a href={%url 'login'%}>Sign In</a></button>
+        </div> {% endcomment %}
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+    <div class="register-container" id="login">
+        <form action="{% url 'signup' %}" method="POST">
+            {% csrf_token %}
+            <div class="top">
+                <span>Do you have an account? <a href={%url 'login'%} onclick="login()">Login</a></span>
+                <header>Sign Up</header>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" id="firstname" name="firstname" placeholder="Firstname" required>
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" id="lastname" name="lastname" placeholder="Lastname" required>
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+                <input  type="text" class="input-field" id="username" name="username" placeholder="username" required >
+                <i class="bx bx-user"></i>
+            </div>
+            
+            <div class="input-box">
+                <input  type="text" class="input-field" id="emailid" name="email" placeholder="Email" required >
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" id="password" name="password" placeholder="Password" required>
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Sign In">
+            </div>
+        </form>
+    </div>
+        
+
+</body>
+</html>

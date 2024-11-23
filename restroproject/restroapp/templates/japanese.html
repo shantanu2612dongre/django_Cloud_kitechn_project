@@ -1,0 +1,171 @@
+{% include "header.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Menu</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Menu Container */
+        .menu-container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            height: 700px; /* Set a fixed height */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+
+        /* Page Title */
+        .menu-title {
+            font-size: 2.5em;
+            color: #c0392b;
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: 'Georgia', serif;
+        }
+
+        /* Menu Items */
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        /* Icon or Image */
+        .menu-icon {
+            width: 80px;
+            height: 80px;
+            background: #f8c291;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 24px;
+            margin-right: 20px;
+        }
+
+        /* Menu Details */
+        .menu-details {
+            flex: 1;
+        }
+
+        .menu-title-item {
+            font-size: 1.5em;
+            color: #e74c3c;
+            margin: 0 0 10px;
+        }
+
+        .menu-description {
+            font-size: 1em;
+            color: #fff;
+        }
+
+        /* Add to Cart Button */
+        .add-to-cart-btn {
+            background-color: #27ae60;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #2ecc71;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .menu-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .menu-icon {
+                margin: 0 auto 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h1 class="menu-title">Japanese Cuisine</h1>
+
+        <div class="menu-item">
+            <div class="menu-icon">🍣</div>
+            <div class="menu-details">
+                <h2 class="menu-title-item">Sushi Platter</h2>
+                <p class="menu-description">
+                    An assortment of fresh nigiri, maki rolls, and sashimi, beautifully presented for a delightful experience.
+                </p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-icon">🍜</div>
+            <div class="menu-details">
+                <h2 class="menu-title-item">Ramen</h2>
+                <p class="menu-description">
+                    Savory noodles in a rich, flavorful broth, topped with sliced pork, boiled egg, and green onions.
+                </p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-icon">🍱</div>
+            <div class="menu-details">
+                <h2 class="menu-title-item">Bento Box</h2>
+                <p class="menu-description">
+                    A balanced meal featuring rice, grilled fish, pickled vegetables, and a variety of side dishes.
+                </p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-icon">🍤</div>
+            <div class="menu-details">
+                <h2 class="menu-title-item">Tempura</h2>
+                <p class="menu-description">
+                    Lightly battered and fried shrimp and vegetables served with a dipping sauce.
+                </p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-icon">🍵</div>
+            <div class="menu-details">
+                <h2 class="menu-title-item">Matcha Green Tea</h2>
+                <p class="menu-description">
+                    A traditional Japanese powdered green tea served hot for a refreshing and calming experience.
+                </p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

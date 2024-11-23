@@ -1,0 +1,148 @@
+{% include "base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color:rgba(255, 255, 255, 0.2);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Services Container */
+        .services-container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* Page Title */
+        .page-title {
+            font-size: 2em;
+            color: background: linear-gradient(145deg, #FF7F50, #FF4500);;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Service Items */
+        .service-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .service-item:last-child {
+            border-bottom: none;
+        }
+
+        /* Icon or Image */
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: background: linear-gradient(145deg, #333333, #000000);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 24px;
+            margin-right: 20px;
+        }
+
+        /* Service Description */
+        .service-details {
+            flex: 1;
+        }
+
+        .service-title {
+            font-size: 1.5em;
+            color: background: linear-gradient(145deg, #FF7F50, #FF4500);;
+            margin: 0 0 10px;
+        }
+
+        .service-description {
+            font-size: 1em;
+            color: #FFFFFF;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .service-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .service-icon {
+                margin: 0 auto 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="services-container">
+        <h1 class="page-title">Our Services</h1>
+
+        <div class="service-item">
+            <div class="service-icon">🍴</div>
+            <div class="service-details">
+                <h2 class="service-title">Customized Meal Plans</h2>
+                <p class="service-description">
+                    Choose from a variety of meal plans tailored to your preferences and dietary needs. Healthy, delicious, and hassle-free!
+                </p>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <div class="service-icon">🚚</div>
+            <div class="service-details">
+                <h2 class="service-title">Fast & Reliable Delivery</h2>
+                <p class="service-description">
+                    Enjoy fresh meals delivered straight to your doorstep with our efficient delivery service.
+                </p>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <div class="service-icon">👨‍🍳</div>
+            <div class="service-details">
+                <h2 class="service-title">Chef’s Specials</h2>
+                <p class="service-description">
+                    Savor exclusive dishes crafted by our top chefs, available only at our cloud kitchen.
+                </p>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <div class="service-icon">🛒</div>
+            <div class="service-details">
+                <h2 class="service-title">Online Ordering</h2>
+                <p class="service-description">
+                    Place your orders with ease through our user-friendly online platform.
+                </p>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <div class="service-icon">🎉</div>
+            <div class="service-details">
+                <h2 class="service-title">Catering for Events</h2>
+                <p class="service-description">
+                    Host memorable events with our expert catering services for parties, meetings, and special occasions.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>
+        {% block title %}
+        Login & Registration
+        {% endblock %}
+    </title>
+    <style>
+        a {
+            text-decoration: none;
+            color: white; /* Change this color to match your design */
+        }
+        
+        /* Optional: Hover effect if needed */
+        a:hover {
+            color: #ffcc00; /* Example hover color */
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+ <div class="wrapper">
+    <nav class="nav">
+        <div class="nav-logo">
+            <a href={%url 'login'%}> <p>Casa Gustului</p></a>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                {% comment %} <li><a href="#" class="link active"></a></li> {% endcomment %}
+                <li><a href={%url 'login'%} class="link">Home</a></li>
+                <li><a href={%url 'blog'%}  class="link">Blog</a></li>
+                <li><a href={%url 'services'%}  class="link">Services</a></li>
+                <li><a href={%url 'about'%}  class="link">About us</a></li>
+
+            </ul>
+        </div>
+        <div class="nav-button">
+            
+           
+            
+            
+                <a href={%url 'login'%}><button class="btn white-btn" id="loginBtn">LogIn</button></a>
+                <a href={%url 'signup'%}><button class="btn white-btn" id="loginBtn">SIgnUp</button></a>
+            
+            
+        </div>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+	

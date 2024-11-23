@@ -1,0 +1,80 @@
+{% comment %} {% extends "base.html" %}
+{% block title %}
+Cloud Kitchen Info
+{% endblock %} {% endcomment %}
+{% include "header.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:white;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .about-section {
+            padding: 20px;
+            background-color:  rgba(255, 255, 255, 0.2);
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-description {
+            font-size: 1em;
+            color: #fff ;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="about-section">
+        <h2>Phone</h2>
+        <p class="contact-description"> 
+            Contact us at +91-9950061169
+
+        <h2>Email</h2>
+        <p class="contact-description">
+          Email us your querry or feedback at dongreshantanu2612@gmail.com
+        </p>
+
+        <h2>Address</h2>
+        <p class="contact-description">
+            Sikar , Rajasthan
+        </p>
+
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cloud Kitchen Project</p>
+    </footer>
+</body>
+</html>

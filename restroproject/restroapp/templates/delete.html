@@ -1,0 +1,7 @@
+{% comment %} <!DOCTYPE html>
+<form method="post">
+    {% csrf_token %}
+    <p>Are you sure you want to delete {{ user.username }}'s account?</p>
+    <button type="submit">Yes, delete</button>
+    <a href="{% url 'dash' %}">Cancel</a> 
+</form> {% endcomment %}

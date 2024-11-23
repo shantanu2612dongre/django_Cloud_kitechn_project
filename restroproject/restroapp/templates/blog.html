@@ -1,0 +1,115 @@
+{% include "base.html" %}
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Kitchen Blog</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin-bottom:416px;;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Blog Container */
+        .blog-container {
+            max-width: 800px;
+            margin-bottom: 200px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* Blog Title */
+        .blog-title {
+            font-size: 2em;
+            background: background: linear-gradient(145deg, #333333, #000000);
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        /* Post Titles */
+        .post-title {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: rgba(0, 0, 0, 2);
+        }
+
+        .post-title:hover {
+            text-decoration: underline;
+        }
+
+        /* Content Text */
+        .post-content {
+            line-height: 1.6;
+            color: #fff;
+            margin: 10px 0 20px;
+        }
+
+        /* Buttons */
+        .read-more {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color:  rgba(255, 255, 255, 0.2);
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .read-more:hover {
+            background-color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .blog-container {
+                padding: 15px;
+            }
+            .blog-title {
+                font-size: 1.5em;
+            }
+            .post-title {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="blog-container">
+        <h1 class="blog-title">Our Cloud Kitchen Blog</h1>
+        
+        <div class="post">
+            <h2 class="post-title">Top 5 Reasons to Choose Cloud Kitchens</h2>
+            <p class="post-content">
+                Cloud kitchens are revolutionizing the food industry, offering delicious meals right at your doorstep. Here’s why customers love them:  
+                <ul>
+                    <li>Freshly prepared meals, always hot and ready.</li>
+                    <li>Wide variety of cuisines to satisfy every craving.</li>
+                    <li>Affordable options that don’t break the bank.</li>
+                    <li>Easy online ordering with fast delivery.</li>
+                    <li>Safe and hygienic food preparation.</li>
+                </ul>
+            </p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+        
+        <div class="post">
+            <h2 class="post-title">Behind the Scenes at Our Cloud Kitchen</h2>
+            <p class="post-content">
+                Ever wondered how your favorite meals are prepared? Our blog takes you behind the scenes of our cloud kitchen, where every dish is crafted with love and care. From sourcing fresh ingredients to ensuring hygiene, here’s how we deliver excellence every day.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+        
+        
+    </div>
+</body>
+</html>

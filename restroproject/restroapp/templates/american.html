@@ -1,0 +1,174 @@
+{% include "header.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Menu</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Menu Container */
+        .menu-container {
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        height:700px; /* Set a fixed height */
+        overflow-y: auto; /* Enable vertical scrolling */
+        }
+
+        /* Page Title */
+        .menu-title {
+            font-size: 2.5em;
+            color: #c0392b;
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: 'Georgia', serif;
+        }
+
+        /* Menu Items */
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        /* Icon or Image */
+        .menu-icon {
+            width: 80px;
+            height: 80px;
+            background: #f8c291;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 24px;
+            margin-right: 20px;
+        }
+
+        /* Menu Details */
+        .menu-details {
+            flex: 1;
+        }
+
+        .menu-title-item {
+            font-size: 1.5em;
+            color: #e74c3c;
+            margin: 0 0 10px;
+        }
+
+        .menu-description {
+            font-size: 1em;
+            color: #fff ;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .menu-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .menu-icon {
+                margin: 0 auto 10px;
+            }
+        }
+
+        .menu-icon {
+            margin: 0 auto 10px;
+        }
+        .add-to-cart-btn {
+            background-color: #27ae60;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .add-to-cart-btn:hover {
+            background-color: #2ecc71;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h1 class="menu-title">American Classics</h1>
+
+        <div class="menu-item">
+            <div class="menu-icon">🍔</div>
+            <div class="menu-details">
+                <h2 class="menu-title-item">Cheeseburger</h2>
+                <p class="menu-description">
+                    A juicy beef patty topped with melted cheddar, fresh lettuce, tomato, onion, and our signature sauce.
+                </p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-icon">🍗</div>
+            <div class="menu-details">
+                <h2 class="menu-title-item">Fried Chicken</h2>
+                <p class="menu-description">
+                    Crispy, golden fried chicken with a side of creamy coleslaw and buttery biscuits.
+                </p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-icon">🌭</div>
+            <div class="menu-details">
+                <h2 class="menu-title-item">Hot Dogs</h2>
+                <p class="menu-description">
+                    Grilled beef hot dogs served with your choice of toppings: mustard, ketchup, onions, and relish.
+                </p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-icon">🥧</div>
+            <div class="menu-details">
+                <h2 class="menu-title-item">Apple Pie</h2>
+                <p class="menu-description">
+                    A slice of warm, spiced apple pie with a flaky crust, served with vanilla ice cream.
+                </p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-icon">☕</div>
+            <div class="menu-details">
+                <h2 class="menu-title-item">Classic Coffee</h2>
+                <p class="menu-description">
+                    A freshly brewed cup of American coffee to pair perfectly with your meal or dessert.
+                </p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
